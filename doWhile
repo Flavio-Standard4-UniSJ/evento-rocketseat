@@ -1,0 +1,4 @@
+O projeto é uma agenda de contatos.
+Possivel fazer cadastro de usuários e listar todos os contatos.
+O banco de dados utilizado é o Sqlite.
+Chamada de API do whatsapp.
