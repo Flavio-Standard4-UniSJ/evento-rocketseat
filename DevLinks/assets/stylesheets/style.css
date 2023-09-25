@@ -3,16 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --text-color: white;
+    --bg-url: url(../images/bg-mobile.jpg);
+}
+/*  dark mode  */
+.light{
+    --text-color: black;
+    --bg-url: url(../images/bg-mobile-light.jpg);
+}
 body{
     /* background: url(../images/bg-mobile.jpg) no-repeat top center/cover; */
-    background-image: url(../images/bg-mobile.jpg);
+    background-image: var(--bg-url);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
 }
 body * {
     font-family: 'Inter', sans-serif;
-    color: #fff;
+    color: var(--text-color);
 }
 a{
     text-decoration: none;
@@ -57,7 +66,7 @@ ul li a{
 }
 ul li a:hover{
     background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid rgba(255, 255, 255, 1);
+    border: 1.5px solid var(--text-color);
 }
 
 /* links redes sociais  */
